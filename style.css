@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    transition: 0.5s;
+}
+body {
+    background-color: #dcdde1;
+
+}
+a {
+    scroll-behavior: smooth;
+    -webkit-transition: all 0.5s ease;
+}
+header {
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 10px;
+    z-index: 99;
+    transition: 0.4s;
+    width: 100%;
+    background-color: #dcdde1;
+}
+
+#logolink {
+    padding-top: 10px;
+    flex: 1;
+    background-image: linear-gradient(45deg, #6a25e0, #02b3dc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-bar {
+    flex: 2;
+    padding-top: 10px;
+}
+.nav-bar a {
+    font-family: Tw Cen MT Condensed Extra Bold;
+    text-decoration: none;
+    color: #6826df;
+    font-size: 32px;
+}
+
+.main-picture img {
+    position: relative;
+    top: 150px;
+    width: 100%;
+    height: 900px;
+    filter: grayscale(40%);
+    
+}
+
+.main-picture .text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 3%;
+}
+.main-picture .text p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.main-picture .text #text1 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.5%;
+    color: #dbdbdb;
+}
+
+.main-picture .text #text2 {
+    color: #dbdbdb;
+}
+.button{
+    height:100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .btn {
+      margin-top: calc(50% + 25px);
+      position: relative;
+      display: inline-block;
+      width: 277px;
+      height: 50px;
+      font-size: 1em;
+      font-weight: bold;
+      line-height: 60px;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: transparent;
+      cursor: pointer;
+      text-decoration:none;
+      font-family: 'Roboto', sans-serif;
+      font-weight:900;
+      font-size:17px;
+      letter-spacing: 0.045em;
+  }
+  
+  .btn svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  
+  .btn svg rect {
+      /*stroke: #EC0033;*/
+      stroke-width: 4;
+      stroke-dasharray: 353, 0;
+      stroke-dashoffset: 0;
+      -webkit-transition: all 600ms ease;
+      transition: all 600ms ease;
+  }
+  
+  .btn span{
+    background: rgb(255,130,130);
+    background: -moz-linear-gradient(left,  rgb(238, 90, 36,1) 0%, rgb(247, 159, 31, 1) 100%);
+    background: -webkit-linear-gradient(left,  rgb(238, 90, 36, 1) 0%,rgb(247, 159, 31, 1) 100%);
+    background: linear-gradient(to right,  rgb(238, 90, 36, 1) 0%,rgb(247, 159, 31, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .btn:hover svg rect {
+      stroke-width: 4;
+      stroke-dasharray: 196, 543;
+      stroke-dashoffset: 437;
+  }
+@font-face {
+    font-family: Tw Cen MT Condensed Extra Bold;
+    src: url('TCCEB.ttf');
+}
+
+@media screen and (max-width: 680px){
+    header {
+        padding: 20px 10px !important;
+    }
+
+    header .logo a {
+        display: block;
+        text-align: center;
+    }
+    .main-picture img {
+        width: 100%;
+        height: auto;
+    }
+    .main-picture .text{
+        position: relative;
+    }
+}
+
+.aboutus {
+    margin: 3% 0;
+}
+.headertext {
+    font-weight: bolder;
+    font-size: 48px;
+    font-family: 'Fira Mono', monospace;
+    color: #4E69D5;
+    letter-spacing: -5px;
+    margin-top: 10%;
+    text-align: center;
+    border-bottom: 5px solid #4E69D5;
+    border-radius: 20px;
+    line-height: 2px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headertext span {
+    background-color: #dcdde1;
+    padding: 0 5%;
+}
+
+.aboutus .main {
+    display: flex;
+    margin: 3% auto 0 auto;
+    width: 60%;
+    font-size: 27px;
+    font-family: Tw Cen MT Condensed Extra Bold;
+    line-height: 130%;
+    padding: 2%;
+    background-color: rgba(117, 117, 117, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.aboutus .main p{
+    padding-right: 15%;
+    text-align: center;
+    width: 60%;
+}
+.aboutus .main img {
+    width: 600px;
+}
+
+.team {
+    width: 70%;
+    margin: 0 auto 5% auto;
+    border-bottom: 1px solid #7f7f7f;
+    height: 720px;
+}
+.title {
+    background-image: url("Pictures/cover.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.title p{
+    padding: 1% 0;
+    font-size: 48px;
+    text-align: center;
+    color: #dbdbdb;
+    font-family: 'Fira Mono', monospace;
+    letter-spacing: -2px;
+}
+
+.people {
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+}
+
+.box {
+    border: 3px solid rgb(238, 90, 36, 1);
+    opacity: 0.6;
+    transition: 0.4s;
+    height: 450px;
+    background-color: rgba(117, 117, 117, 0.3);
+}
+
+.box .text {
+    position: relative;
+    top: -30%;
+    transition: 0.4s;
+    font-family: Tw Cen MT Condensed Extra Bold;
+    font-size: 27px;
+}
+
+.box .name {
+    color: #4E69D5;
+    border-bottom: 1px solid #7f7f7f;
+    margin: 0 auto;
+    width: 80%;
+}
+.box:hover {
+    opacity: 1;
+    height: 550px;
+}
+.box:hover .text {
+    top: 0;
+}
+.box img {
+    width: 300px;
+    position: relative;
+    z-index: 98;
+    
+}
+
+.box p {
+    text-align: center;
+}
+
+.contact {
+    margin: 0 auto 4% auto;
+    width: 70%;
+    background-color: rgb(238, 90, 36, 0.8);
+    border: 1px solid #7f7f7f;
+    border-radius: 15px;
+    padding: 3%;
+
+}
+
+.contact p {
+    font-family: Tw Cen MT Condensed Extra Bold;
+    font-size: 25px;
+    padding-left: 3%;
+    padding-bottom: 3px;
+    color: #e6e6e6;
+}
+.contact .header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center; 
+    color: #dbdbdb;
+    padding: 0 !important;
+}
+
+.box1 {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 3% auto;
+}
+
+.textarea {
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid black;
+    resize: none;
+}
+textarea {
+    position: relative;
+    resize: none;
+    padding: 10px 0 0 20px;
+    border: 0;
+    background-color: #dbdbdb;
+    height: 30px;
+}
+.box1 textarea {
+    width: 350px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.email {
+    width: 600px;
+    margin: 2% auto;
+}
+
+.email .textarea textarea {
+    width: 600px;
+    font-size: 20px;
+}
+
+.gender {
+    width: 100px;
+    margin: 2% auto;
+}
+
+.gender .gendertext{
+    position: relative;
+    right: 80px;
+}
+
+.options {
+    display: flex;
+}
+
+.option {
+    margin: 0 10%;
+}
+.message {
+    width: 53%;
+    margin: 0 auto;
+}
+.message .textarea {
+    width: 700px;
+}
+
+.message textarea {
+    padding-left: 40px;
+    width: 700px;
+    height: 250px;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 8%;
+    background-color: rgba(117, 117, 117, 0.3);
+    height: 100px;
+    display: flex;
+}
+
+footer .informations {
+    font-size: 28px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+footer .maintext {
+    display: flex;
+    font-size: 18px;
+    width: 180%;
+}
+footer .maintext p {
+    margin: 0 2%;
+}
+.left {
+    margin: 1%;
+}
+
+.more {
+    margin:4% 0 0 7%;
+    font-size: 23px;
+}
+
+.right {
+    margin: 1% 1% 1% 10%;
+    width: 52%;
+    display: flex;
+}
+
+.right a {
+    margin: 4% 0 0 10%;
+    font-size: 23px;
+    text-decoration: none;
+    color: #4E69D5;
+}
+
+.necessary {
+    margin-left: 21%;
+}
+
+
+
+
